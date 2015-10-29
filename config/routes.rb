@@ -3,7 +3,7 @@ Flixter::Application.routes.draw do
   root 'static_pages#index'
 
   resources :courses, :only => [:index, :show]
-
+  resources :lessons, :only => [:show]
   namespace :instructor do
     # notice the nesting!!! a LESSON is in a SECTION, which is in a COURSE
     resources :sections, :only => [] do
