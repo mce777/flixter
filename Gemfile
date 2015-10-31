@@ -37,6 +37,7 @@ gem "figaro"
 # using carrierwave-aws instead of fog
 gem 'carrierwave-aws'
 gem 'mini_magick', '~> 4.3.1'
+gem 'stripe'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
