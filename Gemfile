@@ -38,6 +38,7 @@ gem "figaro"
 gem 'carrierwave-aws'
 gem 'mini_magick', '~> 4.3.1'
 gem 'stripe'
+gem 'ranked-model'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
