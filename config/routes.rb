@@ -8,12 +8,15 @@ Flixter::Application.routes.draw do
 
   resources :courses, :only => [:index, :show]
   resources :lessons, :only => [:show]
+
   namespace :instructor do
     # notice the nesting!!! a LESSON is in a SECTION, which is in a COURSE
+    resources :sections, :only => [:update] # for ajax
     resources :lessons, :only => [:update]
     resources :sections, :only => [] do
       resources :lessons, :only => [:new, :create]
     end
+
     resources :courses, :only => [:new, :create, :show] do
       resources :sections, :only => [:new, :create]
     end
