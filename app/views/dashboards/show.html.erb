@@ -9,14 +9,19 @@
     </h3>
     <br />
     <%= image_tag course.image, :class => 'img-responsive' %>
-    <br />
-    <div class="col-xs-12 col-sm-8">
+    <br class="clr" / >
+    <div class="col-xs-6 col-xs-offset-3">
+    <!-- <div class="col-xs-12 col-sm-8"> -->
     <%= course.description %>
     </div>
-    <div class="col-xs-12 col-sm-4 text-center">
+    <br class="clr" />
+    <br class="clr" / >
+    <div class="col-xs-12 text-center">
+    <!-- <div class="col-xs-12 col-sm-4 text-center"> -->
     <%= link_to "More Info...", course_path(course), :class => 'btn btn-lg btn-primary' %>
 	</div>
   <hr class="col-xs-8 col-xs-offset-2">
+  <br class="clr" / >
   <br class="clr" / >
   <% end %>
 
@@ -30,13 +35,18 @@
     <br />
     <%= image_tag course.image, :class => 'img-responsive' %>
     <br />
-    <div class="col-xs-12 col-sm-8">
+    <div class="col-xs-6 col-xs-offset-3">
+    <!-- <div class="col-xs-12 col-sm-8"> -->
     <%= course.description %>
 	   </div>
-	<div class="col-xs-12 col-sm-4 text-center">
+	<br class="clr" />
+	<br class="clr" />   
+	<div class="col-xs-12 text-center">   
+	<!-- <div class="col-xs-12 col-sm-4 text-center"> -->
     <%= link_to "More Info...", course_path(course), :class => 'btn btn-lg btn-primary' %>
 	</div>
 	<hr class="col-xs-8 col-xs-offset-2">
+    <br class="clr" / >
     <br class="clr" / >
   <% end %>
 </div>
