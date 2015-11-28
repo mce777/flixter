@@ -9,7 +9,7 @@ class Instructor::LessonsController < ApplicationController
   end
 
   def update
-  	current_lesson.update_attributes(lesson_params)
+  	current_lesson().update_attributes(lesson_params)
   	render :text => 'updated!'
   end
 
@@ -21,6 +21,7 @@ class Instructor::LessonsController < ApplicationController
     end
   end
 
+  # the value of @current_lesson goes to current_lesson METHOD
   def current_lesson
     @current_lesson ||= Lesson.find(params[:id])
   end
